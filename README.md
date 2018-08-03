@@ -1,17 +1,17 @@
 Vanishing Points detection 
 ==========================
 version 0.9 - June 2017
-by Jose Lezama <jlezama@gmail.com>
+by Jose Lezama <jlezama@fing.edu.uy>
 
 
 Introduction
 ------------
 
 This code implements the vanishing point detection algorithm as described in the IPOL article
- "Vanishing Point Detection in Urban Scenes Using Point Alignments" Jose Lezama, Gregory Randall, Jean-Michel Morel and Rafael Grompone von Gioi. 
+ *"Vanishing Point Detection in Urban Scenes Using Point Alignments"* Jose Lezama, Gregory Randall, Jean-Michel Morel and Rafael Grompone von Gioi. 
 
-Optionally, this code uses the algorithm by Figueiredo and Jain, Unsupervised 
-learning of finite mixture models, to quickly obtain cluster candidates.
+Optionally, this code uses the algorithm by Figueiredo and Jain, *Unsupervised 
+Learning of Finite Mixture models*, to quickly obtain cluster candidates.
 
 Files and Folders
 -----------------
@@ -33,32 +33,32 @@ Compiling
 ---------
 
 The algorithm depends on three mex scripts that need to be compiled before
-execution. For compilation inside MATLAB, cd into the 'mex_files' folder and run
-build.m
+execution. For compilation inside MATLAB, `cd` into the `mex_files` folder and run
+`build.m`
 
-Optional: run make to produce compiled matlab executables
+Optional: run `make` to produce compiled Matlab executables
 
 Running
 -------
 
-For a test run on the test image, run main.m
-main.m calls the main function, detect_vps.m
+For a test run on the test image, run `main.m`
+`main.m` calls the main function, `detect_vps.m`
 Arguments of detect_vps.m are:
- - img_in: filename of the input image
- - folder_out: path to save resulting image and text files
- - manhattan: boolean variable used to determine if the Manhattan-world
+ - `img_in`: filename of the input image
+ - `folder_out`: path to save resulting image and text files
+ - `manhattan`: boolean variable used to determine if the Manhattan-world
    hypothesis is assumed
- - acceleration: boolean variable used to determine if acceleration using
+ - `acceleration`: boolean variable used to determine if acceleration using
    Figueiredo and Jain GMM algorithm should be used
- - focal_ratio: ratio between the focal lenght and captor width
- - input_params: optional input parameters
+ - `focal_ratio`: ratio between the focal lenght and captor width
+ - `input_params`: optional input parameters
 
 
 Benchmarks
 ----------
 
 To run benchmarks on York Urban Dataset (YUD) and Eurasian Cities Dataset (ECD)
-run yud_benchmark.m and ecd_benchmark.m. You should obtain results similar or
+run `yud_benchmark.m` and `ecd_benchmark.m`. You should obtain results similar or
 better to the ones reported in our CVPR paper.
 
 Note that without the acceleration the scripts can be slow. In particular for
@@ -75,8 +75,8 @@ Acceleration
 ------------
 
 As an optional procedure, an accelerated version of the algorithm can be run by
-setting the appropiate flag (see detect_vps.m). This version uses Figueiredo's
-"Unsupervised Learning of Finite Mixture Models" algorithm to quickly obtain
+setting the appropiate flag (see `detect_vps.m`). This version uses Figueiredo's
+*"Unsupervised Learning of Finite Mixture Models"* algorithm to quickly obtain
 cluster candidates.  
 
 The scripts files, available at the author's website (http://www.lx.it.pt/~mtf/)
@@ -86,7 +86,7 @@ are included, and have been slightly modified for speed improvement.
 Copyright and License
 ---------------------
 
-Copyright (c) 2013-2015 Jose Lezama <jlezama@gmail.com>
+Copyright (c) 2013-2015 Jose Lezama <jlezama@fing.edu.uy>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
