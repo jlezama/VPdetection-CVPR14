@@ -7,11 +7,12 @@ by Jose Lezama <jlezama@fing.edu.uy>
 Introduction
 ------------
 
-This code implements the vanishing point detection algorithm as described in the IPOL article
+This code implements the vanishing point detection algorithm as described in the [CVPR 2014 article](http://openaccess.thecvf.com/content_cvpr_2014/html/Lezama_Finding_Vanishing_Points_2014_CVPR_paper.html) *"Finding vanishing
+points via point alignments in image primal and dual domains"*, Jose Lezama, Rafael Grompone von Gioi, Gregory Randall and Jean-Michel Morel, and  [IPOL article](http://www.ipol.im/pub/art/2017/148/)
  *"Vanishing Point Detection in Urban Scenes Using Point Alignments"* Jose Lezama, Gregory Randall, Jean-Michel Morel and Rafael Grompone von Gioi. 
 
 Optionally, this code uses the algorithm by Figueiredo and Jain, *Unsupervised 
-Learning of Finite Mixture models*, to quickly obtain cluster candidates.
+Learning of Finite Mixture Models*, TPAMI 2002, to quickly obtain cluster candidates.
 
 Files and Folders
 -----------------
