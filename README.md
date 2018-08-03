@@ -16,17 +16,17 @@ learning of finite mixture models, to quickly obtain cluster candidates.
 Files and Folders
 -----------------
 
-README.txt             - This file
-COPYING                - GNU AFFERO GENERAL PUBLIC LICENSE Version 3
-Makefile               - Compilation instructions for 'make'
-main.m		       - demo script
-detect_vps.m	       - main algorithm script
-yud_benchmark.m	       - script to run benchmark scores in York Urban Database
-ecd_benchmark.m	       - script to run benchmark scores in Eurasian Citites Database
-test.jpg	       - test image
-lib/		       - folder with auxiliary MATLAB scripts
-mex_files/	       - folder with C sources for line segment and point alignment detection, to be compiled as mex files
-mixtures/	       - folder with the unsupervised mixtures detection code of Figueiredo and Jain, which can optionally be used for accelerating the method
+  - README.txt             - This file
+  - COPYING                - GNU AFFERO GENERAL PUBLIC LICENSE Version 3
+  - Makefile               - Compilation instructions for 'make'
+  - main.m		       - demo script
+  - detect_vps.m	       - main algorithm script
+  - yud_benchmark.m	       - script to run benchmark scores in York Urban Database
+  - ecd_benchmark.m	       - script to run benchmark scores in Eurasian Citites Database
+  - test.jpg	       - test image
+  - lib/		       - folder with auxiliary MATLAB scripts
+  - mex_files/	       - folder with C sources for line segment and point alignment detection, to be compiled as mex files
+  - mixtures/	       - folder with the unsupervised mixtures detection code of Figueiredo and Jain, which can optionally be used for accelerating the method
 
 
 Compiling
